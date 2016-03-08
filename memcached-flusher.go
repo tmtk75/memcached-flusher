@@ -6,7 +6,8 @@ import "log"
 import "os"
 
 func main() {
-	mc := memcache.New(os.Args[1:])
+
+	mc := memcache.New(os.Args[1:]...)
 	for {
 		err := mc.FlushAll()
 		if err != nil {
