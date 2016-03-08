@@ -1,6 +1,6 @@
 # memcached-flusher
 
-Utility to send **flush** command to all servers every 20ms.
+Utility to send **flush_all** command to a list of servers every 20ms.
 
 ## Install
 
