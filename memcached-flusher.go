@@ -9,6 +9,9 @@ import (
 )
 
 func main() {
+	if len(os.Args) == 1 {
+		log.Fatal("no arguments")
+	}
 	mc := memcache.New(os.Args[1:]...)
 	for {
 		err := mc.FlushAll()
