@@ -16,7 +16,7 @@ func main() {
 	for {
 		err := mc.FlushAll()
 		if err != nil {
-			log.Fatal(err)
+			log.Println("err:", err)
 		}
 		time.Sleep(time.Millisecond * 20)
 	}

@@ -1,7 +1,7 @@
 memcached-flusher: *.go
 	go build
 
-version=0.1.0
+version=0.1.1
 
 release: ./memcached-flusher
 	rm -f pkg/*_amd64 pkg/*.exe
